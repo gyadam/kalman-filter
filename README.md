@@ -2,8 +2,6 @@
 
 ## Project 5: Extended Kalman Filter
 
----
-
 **Extended Kalman Filter Project**
 
 The goals of this project were the following:
