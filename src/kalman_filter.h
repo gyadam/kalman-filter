@@ -4,6 +4,8 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+ private:
+ void CalcUpdate(const Eigen::VectorXd &y); 
  public:
   /**
    * Constructor
