@@ -14,8 +14,8 @@ The goals of this project were the following:
 
 [//]: # (Image References)
 
-[image1]: /images/dataset1.png "Result on Dataset 1"
-[image2]: ./images/dataset2.png "Result on Dataset 2"
+[image1]: https://github.com/gyadam/kalman-filter/blob/master/images/dataset1.PNG "Result on Dataset 1"
+[image2]: https://github.com/gyadam/kalman-filter/blob/master/images/dataset2.PNG "Result on Dataset 2"
 
 ### Compiling & Running the project
 
