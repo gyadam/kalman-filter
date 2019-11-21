@@ -21,11 +21,13 @@ The goals of this project were the following:
 
 My code can be compiled, built and run using the following commands:
 
+```
 mkdir build
 cd build
 cmake
 make
 ./ExtendedKF
+```
 
 ### Accuracy
 
@@ -53,16 +55,16 @@ These three steps (initialize, predict, update) plus calculating RMSE encapsulat
 
 The files I worked with are available in the '''src''' folder and are the following:
 
-* '''main.cpp''' - communicates with the simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE
-* '''FusionEKF.cpp''' - initializes the filter, calls the predict function, calls the update function
-* '''kalman_filter.cpp''' - defines the predict function, the update function for lidar, and the update function for radar
-* '''tools.cpp''' - function to calculate RMSE and the Jacobian matrix
+* ```main.cpp``` - communicates with the simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE
+* ```FusionEKF.cpp``` - initializes the filter, calls the predict function, calls the update function
+* ```kalman_filter.cpp``` - defines the predict function, the update function for lidar, and the update function for radar
+* ```tools.cpp``` - function to calculate RMSE and the Jacobian matrix
 
 The following happens when the code is run:
 
-1. '''Main.cpp''' reads in the data and sends a sensor measurement to '''FusionEKF.cpp'''
-2. '''FusionEKF.cpp''' takes the sensor data and initializes variables and updates variables. The Kalman filter equations are not in this file. '''FusionEKF.cpp''' has a variable called '''ekf_''', which is an instance of a '''KalmanFilter''' class. The '''ekf_''' holds the matrix and vector values. The '''ekf_''' instance is also used to call the predict and update equations.
-3. The '''KalmanFilter''' class is defined in '''kalman_filter.cpp''' and '''kalman_filter.h'''. '''kalman_filter.cpp''' contains the functions for the prediction and update steps.
+1. ```main.cpp``` reads in the data and sends a sensor measurement to ```FusionEKF.cpp```
+2. ```FusionEKF.cpp``` takes the sensor data and initializes variables and updates variables. The Kalman filter equations are not in this file. ```FusionEKF.cpp``` has a variable called ```ekf_```, which is an instance of a ```KalmanFilter``` class. The ```ekf_``` holds the matrix and vector values. The ```ekf_``` instance is also used to call the predict and update equations.
+3. The ```KalmanFilter``` class is defined in ```kalman_filter.cpp``` and ```kalman_filter.h```. ```kalman_filter.cpp``` contains the functions for the prediction and update steps.
 
 #### Results
 
