@@ -21,9 +21,11 @@ The goals of this project were the following:
 
 My code can be compiled, built and run using the following commands:
 
-1. ''' mkdir build && cd build '''
-2. ''' cmake .. && make '''
-3. ''' ./ExtendedKF '''
+mkdir build
+cd build
+cmake
+make
+./ExtendedKF
 
 ### Accuracy
 
@@ -38,12 +40,12 @@ The accuracy I acheived with Dataset 1 is: [0.0973, 0.0855, 0.4513, 0.4399]
 The three main steps for programming a Kalman filter:
 
 * initializing Kalman filter variables
-* predicting where our object is going to be after a time step \Delta{t}Δt
-* updating where our object is based on sensor measurements
+* predicting where the object is going to be after a time step \Delta{t}Δt
+* updating where the object is based on sensor measurements
 
 Then the prediction and update steps repeat themselves in a loop.
 
-To measure how well our Kalman filter performs, we then calculate root mean squared error (RMSE) comparing the Kalman filter results with the provided ground truth.
+To measure how well the Kalman filter performs, we then calculate root mean squared error (RMSE) comparing the Kalman filter results with the provided ground truth.
 
 These three steps (initialize, predict, update) plus calculating RMSE encapsulate the entire extended Kalman filter project.
 
