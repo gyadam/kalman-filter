@@ -14,7 +14,7 @@ The goals of this project were the following:
 
 [//]: # (Image References)
 
-[image1]: ./images/dataset1.png "Result on Dataset 1"
+[image1]: ./kalman-filter/images/dataset1.png "Result on Dataset 1"
 [image2]: ./images/dataset2.png "Result on Dataset 2"
 
 ### Compiling & Running the project
