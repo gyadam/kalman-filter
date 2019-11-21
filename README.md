@@ -19,7 +19,7 @@ The goals of this project were the following:
 
 ### Compiling & Running the project
 
-The code can be compiled, built and run using the following commands:
+The code can be compiled, built and run using the [Udacity simulator](https://github.com/udacity/self-driving-car-sim/releases) and the following commands:
 
 ```
 mkdir build
