@@ -53,7 +53,7 @@ These three steps (initialize, predict, update) plus calculating RMSE encapsulat
 
 ### Code and Algorithm
 
-The files I worked with are available in the '''src''' folder and are the following:
+The files I worked with are available in the ```src``` folder and are the following:
 
 * ```main.cpp``` - communicates with the simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE
 * ```FusionEKF.cpp``` - initializes the filter, calls the predict function, calls the update function
